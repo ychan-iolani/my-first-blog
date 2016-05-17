@@ -1,0 +1,15 @@
+#get into djangogirls directory
+#make virtualenv called myenv
+python3 -m venv myvenv
+
+#start virtual environment
+source myvenv/bin/activate
+
+#start django skeleton
+django-admin startproject mysite .
+
+#set up database
+python manage.py migrate
+python manage.py runserver
+
+#
